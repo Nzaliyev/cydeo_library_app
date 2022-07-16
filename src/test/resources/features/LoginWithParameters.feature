@@ -1,4 +1,4 @@
-@wip
+@wip @smoke
 Feature: Login with parameters
 
   @student
