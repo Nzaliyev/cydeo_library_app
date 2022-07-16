@@ -1,6 +1,6 @@
 Feature: Login with parameters
 
-  @student @smoke
+  @student @regression
   Scenario: Login as student 3
     Given I am on the login page
     When I enter username "student3@library"
@@ -8,7 +8,7 @@ Feature: Login with parameters
     And click the sign in button
     Then dashboard should be displayed
 
-  @librarian @employee @smoke
+  @librarian @employee @regression
   Scenario: Login as librarian 3
     Given I am on the login page
     When I enter username "librarian3@library"
