@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>13 Jul 2022, 13:57</td>
+      <td>16 Jul 2022, 22:09</td>
     </tr>
   </tbody>
 </table>
@@ -127,9 +127,9 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Login with parameters</td>
-          <td      class="passed"    >5</td>
-          <td      class="failed"    >1</td>
           <td >0</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >5</td>
           <td >0</td>
           <td >0</td>
           <td class="total">6</td>
@@ -138,7 +138,7 @@ $(document).ready(function() {
           <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="4708524200">4.708</td>
+          <td class="duration" data-value="140040646300">2:20.040</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -168,8 +168,6 @@ $(document).ready(function() {
       <div class="feature">
 
 <div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_2149507997.html">@wip</a>
 </div>
 
 
@@ -189,13 +187,13 @@ $(document).ready(function() {
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_2149507997.html">@wip</a>
        <a href="report-tag_3268278743.html">@librarian</a>
        <a href="report-tag_3627984621.html">@employee</a>
+       <a href="report-tag_233058432.html">@regression</a>
 </div>
 
 
-  <span class="lead-duration duration">4.708</span>
+  <span class="lead-duration duration">2:20.040</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -234,146 +232,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">I am on the login page</span>
 
-  <span class="lead-duration duration">3.879</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">I enter username <span class="argument">&quot;librarian3@library&quot;</span></span>
-
-  <span class="lead-duration duration">0.115</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I enter password <span class="argument">'Bqq9Ru0W'</span></span>
-
-  <span class="lead-duration duration">0.091</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">click the sign in button</span>
-
-  <span class="lead-duration duration">0.070</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">dashboard should be displayed</span>
-
-  <span class="lead-duration duration">0.518</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And failed">
-  <span class="keyword indention">And</span>
-  <span class="name">there should be <span class="argument">&quot;136&quot;</span> users</span>
-
-  <span class="lead-duration duration">0.032</span>
+  <span class="lead-duration duration">2:20.039</span>
 
 </div>
 
@@ -385,17 +248,151 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
-          <a>org.junit.ComparisonFailure:</a>
+          <a>java.lang.NullPointerException</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details  in ">
-        <pre>org.junit.ComparisonFailure: Users number verification failed! expected:&lt;[136]&gt; but was:&lt;[0]&gt;
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at com.cydeo.library.step_definitions.Login_StepDefinitions.there_should_be_users(Login_StepDefinitions.java:76)
-	at &#10045;.there should be &quot;136&quot; users(file:///C:/Users/Nihat/IdeaProjects/cydeo_library_app/src/test/resources/features/LoginWithParameters.feature:19)
+        <pre>java.lang.NullPointerException
+	at com.cydeo.library.step_definitions.Login_StepDefinitions.i_am_on_the_login_page(Login_StepDefinitions.java:24)
+	at &#10045;.I am on the login page(file:///C:/Users/Nihat/IdeaProjects/cydeo_library_app/src/test/resources/features/LoginWithParameters.feature:13)
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">I enter username <span class="argument">&quot;librarian3@library&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I enter password <span class="argument">'Bqq9Ru0W'</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">click the sign in button</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">dashboard should be displayed</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">there should be <span class="argument">&quot;136&quot;</span> users</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
 
 
 
@@ -415,9 +412,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-4">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -427,36 +424,34 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief failed">
             <span class="keyword indention">After</span>
               <span class="location name">com.cydeo.library.step_definitions.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.899</span>
+  <span class="lead-duration duration">1:24.689</span>
 
           </div>
 
 
 
-
-
-
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-5" class="collapsable-control">
-      <a>Login as librarian 3</a>
-      <a href="embeddings/embedding_-644270860.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-5" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_-644270860.png">
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-5">
+          <a>Error message</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details  in ">
+        <pre>java.lang.NullPointerException
+	at com.cydeo.library.step_definitions.Hooks.teardownScenario(Hooks.java:15)
+</pre>
       </div>
     </div>
   </div>
-  </div>
+
+
+
+
 
         </div>
     </div>

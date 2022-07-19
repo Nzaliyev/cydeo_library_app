@@ -4,13 +4,13 @@ Feature: Library app login feature
   Background: Assuming user is on the login page
     Given user is on the login page
 
-  @librarian @employee
+  @librarian @employee @smoke
   Scenario: Login as librarian
     When user enters librarian username
     And user enters librarian password
     Then user should see the dashboard
 
-  @student
+  @student @smoke
   Scenario: Login as student
     When user enters student username
     And user enters student password
